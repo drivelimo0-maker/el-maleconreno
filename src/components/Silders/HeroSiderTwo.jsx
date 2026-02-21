@@ -30,7 +30,18 @@ export default function HeroSiderTwo() {
   return (
     <section>
       <div className="ak-hero ak-style1">
-        <video className="ak-hero-bg ak-bg" autoPlay loop muted>
+        <video
+          className="ak-hero-bg ak-bg"
+          autoPlay
+          loop
+          muted
+          playsInline
+          webkit-playsinline="true"
+          controls={false}
+          disablePictureInPicture
+          controlsList="nodownload nofullscreen noremoteplayback"
+          style={{ pointerEvents: "none" }}
+        >
           <source src="/assets/img/hero.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
