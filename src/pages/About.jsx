@@ -1,5 +1,5 @@
 import React from "react";
-import AboutContent from "../components/AboutContent/AboutContent";
+import AboutContent2 from "../components/AboutContent/AboutContent2";
 import CommonHero from "../components/CommonHero/CommonHero";
 import Testimonial from "../components/Testimonial/Testimonial";
 import OpeningHoursInfo from "../components/OpenIngHour/OpeningHoursInfo";
@@ -10,7 +10,7 @@ export default function About() {
   return (
     <div>
       <CommonHero title={"About Us"} link={"/"} />
-      <AboutContent />
+      <AboutContent2 />
       <BestItem />
       <OpeningHoursInfo typeTwo={true} />
       <Testimonial />
