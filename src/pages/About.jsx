@@ -14,7 +14,7 @@ export default function About() {
       <BestItem />
       <OpeningHoursInfo typeTwo={true} />
       <Testimonial />
-      <GalleryShow noHeaderShow />
+      <GalleryShow noHeaderShow limitItems={3} />
       {/* <Videos videoId={"UsD1MhKBmD4"} /> */}
     </div>
   );
