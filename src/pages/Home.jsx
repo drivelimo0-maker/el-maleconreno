@@ -9,6 +9,7 @@ import HeroSiderTwo from "../components/Silders/HeroSiderTwo";
 import PortfolioSlider from "../components/PortfolioSlider/PortfolioSlider";
 import OpeningHoursInfo from "../components/OpenIngHour/OpeningHoursInfo";
 import GalleryShow from "./Gallery";
+import AmbienceSlider from "../components/AmbienceSlider/AmbienceSlider";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <HeroSiderTwo />
       <MovingText />
       <AboutContent />
+      <AmbienceSlider />
       <OpeningHoursInfo typeTwo={true} />
       {/* <PortfolioSlider /> */}
       <FoodMenuHome styleTwo={false} bgimgremove={true} />
