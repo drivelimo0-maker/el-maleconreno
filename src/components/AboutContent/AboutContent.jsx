@@ -5,7 +5,7 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 const about_content = {
   title: "Sinaloa Flavor",
   textWhite: "The Taste of Mariscos & Fusion Sushi",
-  imgOne: "/assets/img/main11.jpeg",
+  imgOne: "/assets/img/about2.jpeg",
   subtext:
     "Located in Reno, Nevada, El Malecon delivers a bold and exciting fusion of traditional Mexican Mariscos and innovative Sinaloa-style Sushi. Every dish is crafted to celebrate the vibrant coastal flavors of Mexico with a modern twist.",
   details:
