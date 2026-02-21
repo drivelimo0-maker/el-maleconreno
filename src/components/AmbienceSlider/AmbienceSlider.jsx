@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import "./AmbienceSlider.scss";
 
 const ambienceSlides = [
@@ -33,11 +33,16 @@ export default function AmbienceSlider() {
       <div className="ak-height-150 ak-height-lg-60"></div>
       <div className="ambience-slider-wrapper">
         <Swiper
-          modules={[Navigation]}
+          modules={[Navigation, Autoplay]}
           loop={true}
           slidesPerView={1.35}
           spaceBetween={24}
           speed={700}
+          autoplay={{
+            delay: 4000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
           }}
@@ -87,21 +92,6 @@ export default function AmbienceSlider() {
                   {ambienceSlides[activeIndex]?.subtitle}
                 </p>
               </div>
-              <span className="ambience-title-arrow">
-                <svg
-                  width="18"
-                  height="12"
-                  viewBox="0 0 18 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.043 0.343L17.7 6L12.043 11.657M17.7 6H0.7"
-                    stroke="currentColor"
-                    strokeWidth="1.2"
-                  />
-                </svg>
-              </span>
             </div>
 
             {/* Navigation */}
