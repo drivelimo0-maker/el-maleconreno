@@ -1,0 +1,65 @@
+[
+    {
+        "src": "/assets/img/gal1.jpg",
+        "thumbnail": "/assets/img/gallery/gallery_7.jpg",
+        "caption": "Image 7",
+        "title": "Restaurant Ambiance",
+        "desp": "Experience"
+    },
+    {
+        "src": "/assets/img/gal2.jpg",
+        "thumbnail": "/assets/img/gallery/gallery_8.jpg",
+        "caption": "Image 8",
+        "title": "Culinary Excellence",
+        "desp": "Cuisine"
+    },
+    {
+        "src": "/assets/img/gal3.jpg",
+        "thumbnail": "/assets/img/gallery/gallery_9.jpg",
+        "caption": "Image 9",
+        "title": "Fresh Ingredients",
+        "desp": "Quality"
+    },
+    {
+        "src": "/assets/img/gal4.jpg",
+        "thumbnail": "/assets/img/gallery/gallery_10.jpg",
+        "caption": "Image 10",
+        "title": "Signature Dishes",
+        "desp": "Specialty"
+    },
+    {
+        "src": "/assets/img/gal5.jpg",
+        "thumbnail": "/assets/img/gallery/gallery_11.jpg",
+        "caption": "Image 11",
+        "title": "Dining Experience",
+        "desp": "Atmosphere"
+    },
+    {
+        "src": "/assets/img/gal6.jpg",
+        "thumbnail": "/assets/img/gallery/gallery_12.jpg",
+        "caption": "Image 12",
+        "title": "Chef's Special",
+        "desp": "Featured"
+    },
+    {
+        "src": "/assets/img/gal8.jpg",
+        "thumbnail": "/assets/img/gallery/gallery_12.jpg",
+        "caption": "Image 12",
+        "title": "Chef's Special",
+        "desp": "Featured"
+    },
+    {
+        "src": "/assets/img/gal9.jpg",
+        "thumbnail": "/assets/img/gallery/gallery_12.jpg",
+        "caption": "Image 12",
+        "title": "Chef's Special",
+        "desp": "Featured"
+    },
+    {
+        "src": "/assets/img/gal10.jpg",
+        "thumbnail": "/assets/img/gallery/gallery_12.jpg",
+        "caption": "Image 12",
+        "title": "Chef's Special",
+        "desp": "Featured"
+    }
+]
