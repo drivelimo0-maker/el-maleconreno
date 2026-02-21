@@ -362,13 +362,15 @@
     min-height: calc(100vh + 0px);
 
     .hero-text-section {
-      margin-left: 30px;
+      margin-left: 0px;
+      justify-content: center;
 
       .slider-info {
         width: 90%;
+        text-align: center;
 
         .hero-title {
-          text-align: start;
+          text-align: center;
 
           .hero-main-title,
           .hero-main-title-1 {
@@ -405,12 +407,14 @@
 
     .hero-text-section {
       margin-left: 0px;
+      justify-content: center;
 
       .slider-info {
         width: 100%;
+        text-align: center;
 
         .hero-title {
-          text-align: start;
+          text-align: center;
 
           .hero-main-title {
             font-size: 52px;
