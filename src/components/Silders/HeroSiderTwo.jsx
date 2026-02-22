@@ -54,23 +54,25 @@ export default function HeroSiderTwo() {
   return (
     <section>
       <div className="ak-hero ak-style1">
-        <video
-          ref={videoRef}
-          className="ak-hero-bg ak-bg"
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="auto"
-          poster={bg_img}
-          disablePictureInPicture
-          controlsList="nodownload nofullscreen noremoteplayback"
-          style={{ pointerEvents: "none" }}
-
-        >
-          <source src="/assets/img/hero.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <div
+          className="video-wrapper" // Add any layout classes you need here
+          dangerouslySetInnerHTML={{
+            __html: `
+          <video
+            class="ak-hero-bg ak-bg"
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="auto"
+            poster="${bg_img}"
+            style="pointer-events: none;"
+          >
+            <source src="/assets/img/hero.mp4" type="video/mp4" />
+          </video>
+        `,
+          }}
+        />
         <div className="hero-text-section container-fluid">
           <div className="ak-slider ak-slider-hero-2">
             <Swiper
