@@ -45,8 +45,6 @@ export default function HeroSiderTwo() {
   return (
     <section>
       <div className="ak-hero ak-style1">
-        {/* Fallback background image for Android */}
-        <img className="ak-hero-bg ak-bg" src={bg_img} alt="hero background" />
         <video
           ref={videoRef}
           className="ak-hero-bg ak-bg"
@@ -60,7 +58,7 @@ export default function HeroSiderTwo() {
           controls={false}
           disablePictureInPicture
           controlsList="nodownload nofullscreen noremoteplayback"
-          style={{ pointerEvents: "none", position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: 1 }}
+          style={{ pointerEvents: "none" }}
           src="/assets/img/hero.mp4"
         >
           <source src="/assets/img/hero.mp4" type="video/mp4" />
