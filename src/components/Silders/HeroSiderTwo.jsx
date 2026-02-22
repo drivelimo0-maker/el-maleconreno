@@ -36,11 +36,13 @@ export default function HeroSiderTwo() {
           loop
           muted
           playsInline
-          webkit-playsinline="true"
+          webkitPlaysInline
+          preload="auto"
           controls={false}
           disablePictureInPicture
           controlsList="nodownload nofullscreen noremoteplayback"
           style={{ pointerEvents: "none" }}
+          src="/assets/img/hero.mp4"
         >
           <source src="/assets/img/hero.mp4" type="video/mp4" />
           Your browser does not support the video tag.
