@@ -30,14 +30,23 @@ export default function HeroSiderTwo() {
   const videoRef = useRef(null);
 
   useEffect(() => {
-    const video = videoRef.current;
-    if (video) {
-      video.muted = true;
-      const playPromise = video.play();
+    // Programmatically force the video to play on mount
+    if (videoRef.current) {
+      // Explicitly setting muted via JS is sometimes required for Android Chrome
+      videoRef.current.defaultMuted = true;
+      videoRef.current.muted = true;
+
+      const playPromise = videoRef.current.play();
+
       if (playPromise !== undefined) {
-        playPromise.catch(() => {
-          // Autoplay failed — poster/fallback image will show
-        });
+        playPromise
+          .then(() => {
+            // Video started playing successfully
+          })
+          .catch((error) => {
+            console.log("Autoplay was prevented by the browser:", error);
+            // This usually happens if the user is on Battery Saver mode
+          });
       }
     }
   }, []);
@@ -52,14 +61,12 @@ export default function HeroSiderTwo() {
           loop
           muted
           playsInline
-          webkitPlaysInline
           preload="auto"
           poster={bg_img}
-          controls={false}
           disablePictureInPicture
           controlsList="nodownload nofullscreen noremoteplayback"
           style={{ pointerEvents: "none" }}
-          src="/assets/img/hero.mp4"
+
         >
           <source src="/assets/img/hero.mp4" type="video/mp4" />
           Your browser does not support the video tag.
