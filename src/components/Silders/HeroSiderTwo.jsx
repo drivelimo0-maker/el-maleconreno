@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import bg_img from "/assets/img/bg/elhero.png";
 import { Link } from "react-router-dom";
@@ -27,10 +27,28 @@ const sliderData = [
 ];
 export default function HeroSiderTwo() {
   const swiperRefs = useRef();
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (video) {
+      video.muted = true;
+      const playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          // Autoplay failed — poster/fallback image will show
+        });
+      }
+    }
+  }, []);
+
   return (
     <section>
       <div className="ak-hero ak-style1">
+        {/* Fallback background image for Android */}
+        <img className="ak-hero-bg ak-bg" src={bg_img} alt="hero background" />
         <video
+          ref={videoRef}
           className="ak-hero-bg ak-bg"
           autoPlay
           loop
@@ -38,16 +56,16 @@ export default function HeroSiderTwo() {
           playsInline
           webkitPlaysInline
           preload="auto"
+          poster={bg_img}
           controls={false}
           disablePictureInPicture
           controlsList="nodownload nofullscreen noremoteplayback"
-          style={{ pointerEvents: "none" }}
+          style={{ pointerEvents: "none", position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: 1 }}
           src="/assets/img/hero.mp4"
         >
           <source src="/assets/img/hero.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        {/* <img className="ak-hero-bg ak-bg" src={bg_img} alt="..." /> */}
         <div className="hero-text-section container-fluid">
           <div className="ak-slider ak-slider-hero-2">
             <Swiper
