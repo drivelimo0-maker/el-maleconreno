@@ -59,7 +59,7 @@ export default function HeroSiderTwo() {
                 return (
                   <SwiperSlide key={index}>
                     <div className="slider-info">
-                      <div className="hero-title ">
+                      <div className="hero-title mt-24!">
                         <h1 className="hero-main-title text-5xl! mb-4">
                           {item.title}
                         </h1>
@@ -68,12 +68,24 @@ export default function HeroSiderTwo() {
                         </h1>
                       </div>
 
-                      <div className="ak-height-30 ak-height-lg-30"></div>
-                      {/* <div>
-                        <p className="hero-sub-text text-center text-white">
-                          {item.desp}
-                        </p>
-                      </div> */}
+                      <div className="flex justify-center flex-wrap gap-4 md:gap-6 mt-12">
+                        <a
+                          href="https://www.doordash.com/store/el-malecon-mariscos-bar-and-grill-reno-38190139/91063579/?srsltid=AfmBOop6YuhLETLXE3a_k713MXW1NbgVn5YsVNsT0iHO-G4DpRfRhcon"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center justify-center px-6 sm:px-8 py-3 text-sm sm:text-base font-bold text-black bg-[#FFD28D] hover:bg-white hover:text-black hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(255,210,141,0.3)] transition-all duration-300 uppercase tracking-widest"
+                        >
+                          Order Delivery
+                        </a>
+                        <a
+                          href="https://webmenu.edgeservpos.com/malecon/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center justify-center px-6 sm:px-8 py-3 text-sm sm:text-base font-bold text-white bg-transparent border-2 border-[#FFD28D] hover:bg-[#FFD28D] hover:text-black hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(255,210,141,0.3)] transition-all duration-300 uppercase tracking-widest"
+                        >
+                          View Menu
+                        </a>
+                      </div>
                       <div className="ak-height-70 ak-height-lg-30"></div>
                     </div>
                   </SwiperSlide>

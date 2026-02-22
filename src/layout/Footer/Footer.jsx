@@ -162,9 +162,12 @@ export default function Footer() {
           ></div>
           <div className="ak-height-130 ak-height-lg-30"></div>
 
-          <div className="copy-right-section">
-            <p className="text-uppercase text-md-center text-white">
+          <div className="copy-right-section flex flex-col items-center justify-center gap-2">
+            <p className="text-uppercase text-md-center text-white mb-0">
               {Footertext.copyright}
+            </p>
+            <p className="text-white text-uppercase text-center mb-0" style={{ fontSize: "14px" }}>
+              Powered by <a href="https://edgemerchantprocessing.com/" target="_blank" rel="noopener noreferrer" className="text-white" style={{ textDecoration: 'underline' }}>Edge Commerce.</a>
             </p>
           </div>
 
