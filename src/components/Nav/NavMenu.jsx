@@ -41,7 +41,7 @@ export default function NavMenu() {
         <div className="ak-main_header_in">
           <div className="ak-main_header_left">
             <Link className="ak-site_branding" to="/" onClick={closeMenu}>
-              <img src={logo} alt="..." width={50} height={70} />
+              <img src={logo} alt="..." className="w-[85px] md:w-[100px] h-auto object-contain" />
             </Link>
           </div>
           <div className="ak-main_header_right">

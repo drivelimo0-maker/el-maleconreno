@@ -1,4 +1,3 @@
-
 .ak-nav+.ak-toolbox {
     margin-left: 55px;
 }
@@ -38,6 +37,7 @@
 
 .ak-site_branding {
     display: inline-block;
+
     img {
         max-height: 45px;
     }
@@ -46,49 +46,60 @@
 @media screen and (min-width: 1200px) {
     .ak-main_header {
         position: relative;
+
         .container-fluid {
             padding-right: 40px;
             padding-left: 40px;
         }
     }
+
     .ak-nav_list.ak-color_1 {
         color: $white;
+
         ul {
             color: $black;
         }
     }
+
     .ak-nav {
         display: flex;
         align-items: center;
         height: 100%;
         line-height: 1.6em;
         font-size: 16px;
+
         .ak-nav_list {
             display: flex !important;
             flex-wrap: wrap;
             height: inherit;
+
             >li {
                 margin-right: 50px;
                 height: inherit;
                 text-transform: uppercase;
                 color: $white;
+
                 &:last-child {
                     margin-right: 0;
                 }
+
                 >a {
                     padding: 10px 0;
                     display: inline-flex;
                     position: relative;
                     height: inherit;
                     align-items: center;
+
                     &:hover {
                         color: $yellow;
                     }
                 }
+
                 >ul {
                     left: 0;
                     top: calc(100% + 15px);
                 }
+
                 &:hover {
                     >ul {
                         top: 100%;
@@ -97,16 +108,20 @@
                         transition: all 0.4s ease;
                     }
                 }
+
                 &.menu-item-has-children {
-                    transition: all  0.5s;
+                    transition: all 0.5s;
+
                     >a {
                         position: relative;
                     }
                 }
             }
+
             li:not(.ak-mega_menu) {
                 position: relative;
             }
+
             ul {
                 width: 260px;
                 background-color: #000000da;
@@ -120,11 +135,13 @@
                 display: block !important;
                 border-radius: 0px 0px 5px 5px;
                 transition: all 0.1s ease;
+
                 li {
                     &:hover {
                         ul {
                             top: 0px;
                         }
+
                         >ul {
                             opacity: 1;
                             visibility: visible;
@@ -132,11 +149,13 @@
                         }
                     }
                 }
+
                 a {
                     display: block;
                     line-height: inherit;
                     padding: 7px 20px;
                 }
+
                 ul {
                     top: 15px;
                     left: 100%;
@@ -144,6 +163,7 @@
             }
         }
     }
+
     .ak-nav .ak-nav_list {
         .ak-mega_wrapper {
             width: 1296px !important;
@@ -152,27 +172,33 @@
             display: flex !important;
             position: absolute;
             padding: 5px 15px 10px;
+
             a {
                 padding: 5px 10px;
+
                 img {
                     border-radius: 5px;
                     border: 1px solid rgba(181, 181, 181, 0.1);
                     transition: all 0.5s ease;
                 }
+
                 &:hover {
                     img {
                         border-color: rgba($yellow, 0.6);
                     }
                 }
             }
+
             >li {
                 flex: 1;
                 padding: 10px 0;
+
                 >a {
                     &:hover {
                         background-color: transparent;
                     }
                 }
+
                 ul {
                     position: initial;
                     border: none;
@@ -183,6 +209,7 @@
                 }
             }
         }
+
         .ak-mega_menu {
             &:hover {
                 .ak-mega_wrapper {
@@ -194,9 +221,10 @@
             }
         }
     }
+
     .ak-nav .ak-nav_list>li ul:not(.ak-mega_wrapper) .menu-item-has-children>a {
         position: relative;
-        transition: all  0.5s;
+        transition: all 0.5s;
     }
 }
 
@@ -204,9 +232,11 @@
     .ak-nav-container {
         max-width: 100%;
     }
+
     .ak-nav .ak-nav_list .ak-mega_wrapper {
         width: 1116px !important;
     }
+
     .ak-site-branding {
         max-width: 190px;
     }
@@ -217,22 +247,31 @@
     .ak-nav .ak-nav_list .ak-mega_wrapper {
         width: 100% !important;
     }
+
     .ak-nav-container {
         max-width: 100%;
         padding: 0 15px;
     }
+
     .ak-nav {
         display: flex;
     }
+
     .ak-main_header_in {
         height: 80px;
         justify-content: start;
         margin-top: 0px;
+
         .ak-main_header_left {
             display: inline-block;
             z-index: 10;
         }
     }
+
+    .ak-site_branding img {
+        max-height: 70px;
+    }
+
     .ak-nav {
         .ak-nav_list {
             position: absolute;
@@ -249,43 +288,52 @@
             overflow: hidden;
             max-height: calc(100vh);
             line-height: 1.6em;
+
             ul {
-                transition: all  0.5s;
+                transition: all 0.5s;
                 padding-left: 15px;
                 max-height: 0;
                 overflow: hidden;
             }
+
             a {
                 display: block;
                 padding: 8px 20px;
                 text-transform: uppercase;
                 color: $white;
+
                 &:hover {
                     color: $yellow;
                 }
             }
         }
+
         .menu-item-has-children {
             position: relative;
-            ul{
+
+            ul {
                 transition: all 0.5s ease-in-out;
             }
         }
+
         .menu-item-has-children.active {
-            ul{
+            ul {
                 transition: all 0.5s ease-in-out;
                 max-height: 9999px !important;
             }
         }
-        .ak-show-moblie-nav-list{
+
+        .ak-show-moblie-nav-list {
             height: 100vh;
             transition: height 1s;
         }
     }
+
     .ak-nav .ak-nav_list a {
         position: relative;
         text-transform: uppercase;
         color: $white;
+
         &:hover {
             color: $yellow;
         }
@@ -301,5 +349,5 @@
 @media screen and (max-width: 575px) {
     .ak-site_branding img {
         max-height: 100px;
-    } 
+    }
 }
