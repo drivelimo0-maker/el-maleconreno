@@ -97,7 +97,7 @@ export default function HeroSiderTwo() {
 
                       <div className="flex flex-col sm:flex-row justify-center items-stretch sm:items-center w-64 sm:w-auto mx-auto gap-4 md:gap-6 mt-12">
                         <a
-                          href="https://olo.edgeservpos.com/malecon"
+                          href="https://edgemerchantprocessing.com/"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="md:hidden inline-flex items-center justify-center px-6 sm:px-8 py-3 text-sm sm:text-base font-bold text-black bg-[#FFD28D] hover:bg-white hover:text-black hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(255,210,141,0.3)] transition-all duration-300 uppercase tracking-widest text-center whitespace-nowrap"
